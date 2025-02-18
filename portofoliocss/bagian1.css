@@ -473,6 +473,19 @@ a {
       box-shadow: 0 0 20px rgb(255, 55, 0), 0 0 30px rgba(147, 4, 4, 0.8);
   }
 }
+/* hamburger-menu */
+button.btn{
+  background: none;
+  border: none;
+  display: none;
+}
+button.btn > i{
+  font-size: 200%;
+}
+button.btn > i.icon-x{
+  display: none;
+}
+
 /* responsif */
 
 @media only screen and (max-width: 1024px){
@@ -545,4 +558,32 @@ a {
   padding: 0px;
   margin: 0px;
 }
+}
+@media only screen and (max-width: 600px){
+  button.btn{
+    background: none;
+    border: none;
+    display: inline;
+}
+.menu{
+  display: none;
+}
+.tampil{
+  display: inline;
+}
+.tampil > ul {
+  flex-direction: column;
+  background-color: #030303;
+  width: 100%;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  z-index: 700;
+}
+.tampil > ul > li{
+  padding: 10px 20px 10px 20px;
+  color: #FFE8C8;
+  z-index: 800;
+}
+
 }
