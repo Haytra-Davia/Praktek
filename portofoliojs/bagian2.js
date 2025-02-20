@@ -1,8 +1,3 @@
-const menu = document.querySelector('.menu');
-const btn = document.querySelector('.btn');
-const iconbiasa = document.querySelector('.icon-biasa');
-const iconx = document.querySelector('.icon-x');
-
 const bgCanvas = document.getElementById("background");
 const bgCtx = bgCanvas.getContext("2d");
 bgCanvas.width = window.innerWidth;
@@ -29,7 +24,7 @@ class BGParticle {
         }
     }
     draw() {
-        bgCtx.fillStyle = "rgb(184, 0, 31)";
+        bgCtx.fillStyle = "rgba(255, 255, 255, 0.5)";
         bgCtx.beginPath();
         bgCtx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         bgCtx.fill();
@@ -63,16 +58,16 @@ class Particle {
         this.size = size;
         this.speedX = speedX;
         this.speedY = speedY;
-        this.alpha = 1.5;
+        this.alpha = 1;
     }
     update() {
         this.x += this.speedX;
         this.y += this.speedY;
-        this.alpha -= 0.01;
+        this.alpha -= 0.02;
         if (this.alpha <= 0) this.alpha = 0;
     }
     draw() {
-        ctx.fillStyle = `rgba(235, 131, 23, ${this.alpha})`;
+        ctx.fillStyle = `rgba(255, 255, 255, ${this.alpha})`;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx.fill();
@@ -116,13 +111,4 @@ window.addEventListener("resize", () => {
     particlesCanvas.width = window.innerWidth;
     particlesCanvas.height = window.innerHeight;
     initBGParticles();
-});
-document.querySelectorAll('.menuItem').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        document.getElementById(targetId).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
 });

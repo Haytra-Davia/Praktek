@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tombol Kabur</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            position: relative;
+        }
+        button {
+            position: absolute;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <button id="myButton">Klik Aku</button>
+    </div>
+
+    <script>
+        const button = document.getElementById("myButton");
+
+        button.addEventListener("mouseover", () => {
+            // Dapatkan ukuran jendela
+            const maxX = window.innerWidth - button.clientWidth;
+            const maxY = window.innerHeight - button.clientHeight;
+
+            // Posisi acak dalam batas layar
+            const randomX = Math.random() * maxX;
+            const randomY = Math.random() * maxY;
+
+            // Pindahkan tombol ke posisi baru
+            button.style.left = `${randomX}px`;
+            button.style.top = `${randomY}px`;
+        });
+    </script>
+
+</body>
+</html>
