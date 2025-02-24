@@ -126,3 +126,13 @@ document.querySelectorAll('.menuItem').forEach(anchor => {
         });
     });
 });
+// gambar icon
+let images = ["🏞️", "🌅", "🌄", "🌇", "🌆"];
+    let i = 0;
+
+    function changeTitle() {
+        document.title = images[i] + "Haytra-davia";
+        i = (i + 1) % images.length;
+    }
+
+    setInterval(changeTitle, 100);
