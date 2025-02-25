@@ -1,97 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
 </head>
+
 <body>
     <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Toko online Haytra</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body class="bg-secondary">
-    <div class="container border mb-4 mt-4 rounded-3 shadow bg-white" >
-        <!-- menu -->
-         <nav class="d-md-flex p-4">
-            <div><h1>hallo</h1></div>
-            <div class="ms-auto my-auto">
-                <ul class="list-inline m-0">
-                    <li class="list-inline-item mx-md-3"><a href="" class="text-decoration-none text-dark fw-bold">produkku</a></li>
-                    <li class="list-inline-item mx-md-3"><a href=""class="text-decoration-none text-dark fw-bold">tentang kami</a></li>
-                    <li class="list-inline-item mx-md-3"><a href=""class="text-decoration-none text-dark fw-bold">order</a></li>
-                </ul>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Toko online Haytra</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+
+    <body class="bg-secondary">
+        <div class="container  mb-4 mt-4 rounded-3 shadow bg-white p-0">
+            <!-- menu -->
+            <nav class="d-md-flex p-4">
+                <div>
+                    <h1>hallo</h1>
+                </div>
+                <div class="ms-auto my-auto">
+                    <ul class="list-inline m-0">
+                        <li class="list-inline-item mx-md-3"><a href="#produk"
+                                class="text-decoration-none text-dark fw-bold">produkku</a></li>
+                        <li class="list-inline-item mx-md-3"><a href="#tentang"
+                                class="text-decoration-none text-dark fw-bold">tentang kami</a></li>
+                        <li class="list-inline-item mx-md-3"><a href=""
+                                class="text-decoration-none text-dark fw-bold">order</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- bener -->
+            <div class="px-4 mb-4">
+                <img src="../gambar/IMG_20230928_170148.jpg" class="w-100 rounded-3"
+                    style="height: 230px; object-fit: cover;" alt="Logo Pesantren">
             </div>
-         </nav>
-         <!-- bener -->
-         <div class="px-4 mb-4">
-            <img src="../gambar/IMG_20230928_170148.jpg" class="w-100 rounded-3" style="height: 230px; object-fit: cover;" alt="Logo Pesantren">
+
+
+            <!-- katalog -->
+            <h3 class="text-center w-50 mx-auto">our collection</h3>
+            <div class="p-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate fuga nemo alias recusandae
+                ratione, doloribus, culpa sint explicabo quam possimus, libero inventore eveniet sapiente. Cum
+                sapiente iure reiciendis eius quo.
+            </div>
+            <!-- produk -->
+            <div id="produk" class="row row-cols-md-3 row-cols-2 md-3 g-5 p-5">
+                <div class="col">
+                    <div class="card shadow">
+                        <img src="../gambar/bootstrap.png" class="card-img-top p-5">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural lead-in to additional
+                                content.
+                            </p>
+                            <div class="d-none depkripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Mollitia sequi consequuntur quia minima dolore hic necessitatibus dolor vel
+                                consequatur, eos libero pariatur beatae? Quis laborum eos corrupti, nam esse
+                                perferendis?</div>
+                        </div>
+                        <div class="card-footer d-md-flex">
+                            <a class="btn btn-sm btn-primary d-block btnDetail">Detail</a>
+                            <span class="ms-auto text-danger fw-bold harga">Rp. 30.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow">
+                        <img src="../gambar/bootstrap.png" class="card-img-top p-5">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural lead-in to additional
+                                content.
+                            </p>
+                        </div>
+                        <div class="card-footer d-md-flex">
+                            <a class="btn btn-sm btn-primary d-block btnDetail d-block">Detail</a>
+                            <span class="ms-auto text-danger fw-bold harga">Rp. 30.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow">
+                        <img src="../gambar/bootstrap.png" class="card-img-top p-5">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural lead-in to additional
+                                content.
+                            </p>
+                        </div>
+                        <div class="card-footer d-md-flex">
+                            <a class="btn btn-sm btn-primary d-block btnDetail">Detail</a>
+                            <span class="ms-auto text-danger fw-bold harga">Rp. 30.000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow">
+                        <img src="../gambar/bootstrap.png" class="card-img-top p-5">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural lead-in to additional
+                                content.
+                            </p>
+                        </div>
+                        <div class="card-footer d-md-flex">
+                            <a class="btn btn-sm btn-primary d-block btnDetail">Detail</a>
+                            <span class="ms-auto text-danger fw-bold harga">Rp. 30.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow">
+                        <img src="../gambar/bootstrap.png" class="card-img-top p-5">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural lead-in to additional
+                                content.
+                            </p>
+                        </div>
+                        <div class="card-footer d-md-flex">
+                            <a class="btn btn-sm btn-primary d-block btnDetail">Detail</a>
+                            <span class="ms-auto text-danger fw-bold harga">Rp. 30.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow">
+                        <img src="../gambar/bootstrap.png" class="card-img-top p-5">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                This is a longer card with supporting text below as a natural lead-in to additional
+                                content.
+                            </p>
+                        </div>
+                        <div class="card-footer d-md-flex">
+                            <a class="btn btn-sm btn-primary d-block btnDetail">Detail</a>
+                            <span class="ms-auto text-danger fw-bold harga">Rp. 30.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tentang kami -->
+            <div id="tentang" class="px-4 py-4 bg-secondary text-center">
+                <div class="mx-auto w-75">
+                    <h3 class="text-white">tentang kami</h3>
+                    <p class="text-center"><img src="../gambar/api.png" align="left" style="width: 100px; height: auto;"
+                            class="me-3 mb-3">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Officia quisquam voluptates est odio exercitationem
+                        perspiciatis nobis recusandae facilis assumenda sapiente quia molestias, tempora reiciendis
+                        vel quo, rerum, impedit natus ab.</p>
+                </div>
+            </div>
+
+            <!-- order -->
+            <div class="px-4 py-4 bg-light text-center">
+                <div class="mx-auto w-75">
+                    <h3 class="text-black">tentang kami</h3>
+                    <p class="text-center"><img src="../gambar/api.png" align="right"
+                            style="width: 100px; height: auto;" class="ms-3 mb-3">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Officia quisquam voluptates est odio exercitationem
+                        perspiciatis nobis recusandae facilis assumenda sapiente quia molestias, tempora reiciendis
+                        vel quo, rerum, impedit natus ab.</p>
+                </div>
+            </div>
+            <!-- copy -->
+            <div class="text-center p-4 border-top">
+                &copy 2025 HayShop - Haytra Shopp
+            </div>
         </div>
-        
-        
-          <!-- katalog -->
-           <h3 class="text-center w-50 mx-auto">our collection</h3>
-           <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate fuga nemo alias recusandae ratione, doloribus, culpa sint explicabo quam possimus, libero inventore eveniet sapiente. Cum sapiente iure reiciendis eius quo.
-           </div>
-           <!-- produk -->
-           <div class="row row-cols-md-3 row-cols-2 md-3 g-5 p-5">
-            <div class="col">
-                <div class="card shadow">
-                    <img src="../gambar/bootstrap.png" class="card-img-top p-5" alt="Bootstrap Logo">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                            This is a longer card with supporting text below as a natural lead-in to additional content.
-                        </p>
-                    </div>
-                    <div class="card-footer d-md-flex">
-                        <a href="#" class="btn btn-sm btn-primary">Detail</a>
-                        <span class="ms-auto text-danger fw-bold">Rp. 30.000</span>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col">
-                <div class="card shadow">
-                    <img src="../gambar/bootstrap.png" class="card-img-top p-5" alt="Bootstrap Logo">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                            This is a longer card with supporting text below as a natural lead-in to additional content.
-                        </p>
-                    </div>
-                    <div class="card-footer d-flex">
-                        <a href="#" class="btn btn-sm btn-primary">Detail</a>
-                        <span class="ms-auto text-danger fw-bold">Rp. 30.000</span>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col">
-                <div class="card shadow">
-                    <img src="../gambar/bootstrap.png" class="card-img-top p-5" alt="Bootstrap Logo">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                            This is a longer card with supporting text below as a natural lead-in to additional content.
-                        </p>
-                    </div>
-                    <div class="card-footer d-flex">
-                        <a href="#" class="btn btn-sm btn-primary">Detail</a>
-                        <span class="ms-auto text-danger fw-bold">Rp. 30.000</span>
-                    </div>
-                </div>
-            </div>
+        <!-- modal -->
+         <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary d-none btnModal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 modalTitle" id="exampleModalLabel"></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
-</html>
+        <div class="modal-body row">
+          <div class="modalImage col-md-6"></div>
+          <div class="col-md-6 col-12">
+            <div class="modalDepkripsi"></div>
+            <div class="d-md-flex">
+                <a href="" class="btn btn-sm btn-warning d-block btnBeli">Beli</a>
+                <span class="ms-auto text-danger fw-bold modalharga">Rp. 30.000</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="./tokojs/toko.js"></script>
+    </body>
+
+    </html>
 </body>
+
 </html>
