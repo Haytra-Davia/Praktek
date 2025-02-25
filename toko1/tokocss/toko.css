@@ -109,6 +109,7 @@ header {
     background-size: cover;
     display: grid;
     align-items: center;
+    justify-content: center;
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -157,7 +158,7 @@ header {
 .ride-container {
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(0px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(210px, auto));
     gap: 1rem;
     margin-top: 2rem;
     background-color: #C4D9FF;
@@ -190,8 +191,8 @@ header {
 
 .services-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(190px, auto));
+    gap: 4rem;
     margin-top: 1rem;
 }
 
@@ -257,7 +258,6 @@ header {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 2rem;
     align-items: center;
-    gap: 1;
     margin-top: 1rem;
 
 }
@@ -272,7 +272,7 @@ header {
 }
 .about-text p{
     margin: 0.rem 0 0.4rem;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 .about-text .btn{
     padding: 10px 20px;
@@ -283,4 +283,158 @@ header {
 }
 .about-text .btn:hover{
     background: red;
+}
+/* responsif */
+
+@media (max-width:991px){
+    header{
+        padding: 18px 40px;
+    }
+    section{
+        padding: 50px 40px;
+    }
+}
+@media (max-width:881px){
+    .home{
+        background: left;
+    }
+    .form-container form{
+       bottom: 0.2rem;
+       left: 40px;
+    }
+}
+@media (max-width:768px){
+    header{
+        padding: 11px 40px;
+    }
+   #menu-icon{
+        display: initial;
+    }
+    .sign-up{
+        display: none;
+    }
+    .text h21{
+        font-size: 2.5rem;
+    }
+    .home{
+        grid-template-columns: 1fr;
+    }
+    .form-container form{
+        position: unset;
+    }
+    header .navbar{
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        /* box-shadow: 0 4px 4px red; */
+        transition: 0.2s ease;
+        text-align: left;
+        box-shadow: 0 4px 4px blue;
+    }
+    .navbar.active{
+        top: 100%;
+        z-index: 1200;
+    }
+    .navbar a{
+        padding: 1rem;
+        border-left: 2px solid var(--main-color);
+        margin: 1rem;
+        display: block;
+    }
+    .navbar a:hover{
+        color: black;
+        background-color: var(--main-color);
+        border: none;
+    }
+    .navbar a::after{
+        display: none;
+    }
+    .home {
+        width: 100%;
+        min-height: 100vh;
+        position: relative;
+        background-repeat: center right;
+        background-size: cover;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .image img {
+        width: 35%;
+        position: absolute;
+        right: 0%;
+        top: 30%;
+    }
+    .text h1 {
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+    }
+    .heading span{
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+    .heading h1{
+        font-size: 1.3rem;
+    }
+    .about-container{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .about-img{
+        padding: 1rem;
+        order: 2;
+    }
+    .form-container{
+        padding-top: 2rem;
+}
+@media (max-width:350px){
+.header{
+    padding: 6px 14px;
+}
+.logo img{
+    width: 30px;
+}
+section{
+    padding: 50px 14px;
+}
+.header-btn .sign-in{
+    padding: 7px 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.text h1{
+    font-size: 2rem;
+}
+.form-container{
+    padding-top: 2rem;
+}
+.home {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-repeat: center right;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.image img {
+    width: 50%;
+    position: absolute;
+    right: 0%;
+    top: 20%;
+}
+.text h1 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+}
 }
