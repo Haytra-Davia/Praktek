@@ -95,6 +95,7 @@ header {
     background-color: rgb(85, 0, 255);
     color: aliceblue;
     border-radius: 10px;
+    cursor: url('cart-icon.png'), auto;
 }
 
 .header-btn .sign-in:hover {
@@ -191,8 +192,8 @@ header {
 
 .services-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, auto));
-    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 1rem;
     margin-top: 1rem;
 }
 
@@ -204,14 +205,15 @@ header {
 
 .services-container .box-img {
     width: 100%;
-    height: 200px;
+    height: 100%;
 }
 
-.services-container .box .box-img img {
+.services-container .box img {
     width: 100%;
-    height: 100%;
+    height: 200px;
     border-radius: 1rem;
     object-fit: cover;
+   
     object-position: center;
 }
 
@@ -238,6 +240,7 @@ header {
     font-size: 0.8rem;
     font-weight: 500;
     color: var(--text-color);
+    text-decoration: line-through;
 }
 
 .services-container .box .btn {
@@ -333,7 +336,7 @@ header {
         /* box-shadow: 0 4px 4px red; */
         transition: 0.2s ease;
         text-align: left;
-        box-shadow: 0 4px 4px blue;
+        box-shadow: 0 4px 4px rgb(0, 0, 20);
     }
     .navbar.active{
         top: 100%;
