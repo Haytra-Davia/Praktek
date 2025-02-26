@@ -21,3 +21,20 @@
  sr.reveal('.services-container .box',{delay:600, origin:'top'})
  sr.reveal('.ride-container .box',{delay:600, origin:'left'})
  sr.reveal('.about',{delay:600, origin:'right'})
+ sr.reveal('.bawah-box1',{delay:600, origin:'left'})
+ sr.reveal('.bawah-box',{delay:600, origin:'bottom'})
+
+//  jam
+function updateClock() {
+   const now = new Date();
+   const hours = now.getHours().toString().padStart(2, '0');
+   const minutes = now.getMinutes().toString().padStart(2, '0');
+   const seconds = now.getSeconds().toString().padStart(2, '0');
+   document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+
+   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+   document.getElementById('date').textContent = now.toLocaleDateString('id-ID', options);
+}
+
+setInterval(updateClock, 1000);
+updateClock();

@@ -91,11 +91,13 @@ header {
     font-weight: 500;
 }
 
-.header-btn .sign-in {
+.header-btn .waktu {
     background-color: rgb(85, 0, 255);
     color: aliceblue;
-    border-radius: 10px;
+    border-radius: 9px;
     cursor: url('cart-icon.png'), auto;
+    padding: 4px;
+    text-align: center;
 }
 
 .header-btn .sign-in:hover {
@@ -227,7 +229,43 @@ header {
 
 .services-container .box h3 {
     font-weight: 500;
+
 }
+/* bawah */
+    .bawah{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, auto));
+    width: 100%;
+    background:  #C4D9FF;
+    background-size: cover;
+}
+.bawah .bawah-box h3{
+    color: red;
+    text-transform: uppercase;
+
+}
+.bawah .bawah-box1 h3{
+    color: red;
+    text-transform: uppercase;
+}
+
+.bawah-box a{
+    text-decoration: none;
+    font-family: "Lacquer";
+}
+.bawah-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.bawah .bawah-box1 li{
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.bawah .bawah-box2 a{
+    text-decoration: none;
+    
+} 
 
 .services-container .box h2 {
     font-size: 1.1rem;

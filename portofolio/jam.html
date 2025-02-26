@@ -15,7 +15,7 @@
             justify-content: center;
             flex-direction: column;
             height: 100vh;
-            background: rgb(7, 7, 7);
+            background: #060a1f;
         }
         h2{
             color: aliceblue;
@@ -32,20 +32,22 @@
         .time > div{
             position: relative;
             margin: 0 5px;
-            background: transparent;
+            background: linear-gradient(transparent,#fff8);
+          
         }
         .time>div>span{
             position: relative;
             display: block;
+            background: #0b3247;
             width: 100px;
             height: 80px;
-            color: rgb(46, 3, 3);
+            color: white;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 30px;
             z-index: 5;
-            box-shadow: 0 0 0 1px #FFB22C;
+            box-shadow: 0 0 0 0px #FFB22C;
             margin:  0 10px;
         }
         .time>div>span:nth-child(2){
@@ -55,6 +57,12 @@
             z-index: 4;
             box-shadow: none;
             background: rgb(85, 0, 255);
+        }
+        .time>div>span:nth-child(3)span{
+            background: #c3025c;
+        }
+        .time>div>span:nth-child(3)span:nth-child(2){
+            background: #4f0226;
         }
        
     </style>
