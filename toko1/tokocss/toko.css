@@ -1,3 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Mouse+Memoirs&family=Tangerine:wght@400;700&display=swap');
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +12,8 @@
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Mouse Memoirs", serif;Arial, sans-serif;
+    font-weight: 500;
 }
 
 :root {
@@ -126,6 +133,22 @@ header {
 .text h1 {
     font-size: 3.5rem;
     letter-spacing: 2px;
+    position: relative;
+    white-space: nowrap;
+    left: 0;
+    width: 10%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: move 3s linear infinite alternate;
+}
+@keyframes move{
+    0%{
+        width: 0;
+    }
+    80%,
+    100%{
+        width: 100%;
+    }
 }
 
 .text span {
@@ -133,7 +156,11 @@ header {
 }
 
 .text p {
-    margin: 0 0.5rem 0 1rem;
+    margin: 1rem 4rem 0 0;
+font-family: "Kaushan Script", serif;
+    font-weight: 500;
+    font-size: 100%;
+    
 }
 
 .app-stores {
@@ -238,20 +265,27 @@ header {
     width: 100%;
     background:  #C4D9FF;
     background-size: cover;
+    margin: 0;
 }
 .bawah .bawah-box h3{
     color: red;
     text-transform: uppercase;
+    font-family: "Mouse Memoirs", serif;
+  font-weight: 400;
 
 }
 .bawah .bawah-box1 h3{
     color: red;
     text-transform: uppercase;
+    font-family: "Mouse Memoirs", serif;
+  font-weight: 400;
 }
 
 .bawah-box a{
     text-decoration: none;
-    font-family: "Lacquer";
+    font-family: "Mouse Memoirs", serif;
+  font-weight: 400;
+  color: black;
 }
 .bawah-box{
     display: flex;
@@ -260,12 +294,24 @@ header {
 
 .bawah .bawah-box1 li{
    font-family: Arial, Helvetica, sans-serif;
+   font-family: "Mouse Memoirs", serif;
+  font-weight: 400;
 }
 
 .bawah .bawah-box2 a{
     text-decoration: none;
     
 } 
+
+/* copy */
+.copyright{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    background-color: rgba(249, 0, 0, 0.852);
+    
+}
 
 .services-container .box h2 {
     font-size: 1.1rem;
