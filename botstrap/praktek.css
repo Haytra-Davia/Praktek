@@ -1,0 +1,9 @@
+@media (min-width: 800px) {
+    .select{
+        width: 50%;
+    }
+    .tulisan{
+        position: relative;
+        top: 15px;
+    }
+}
